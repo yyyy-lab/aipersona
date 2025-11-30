@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- 选择Persona身份 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="选择发布身份"
+        android:textSize="14sp"
+        android:textColor="@android:color/darker_gray"/>
+
+    <Spinner
+        android:id="@+id/spinnerPersona"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:padding="12dp"
+        android:background="@drawable/bg_input"/>
+
+    <!-- 输入内容 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="分享你的想法..."
+        android:textSize="14sp"
+        android:textColor="@android:color/darker_gray"/>
+
+    <EditText
+        android:id="@+id/etPostContent"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="8dp"
+        android:padding="12dp"
+        android:gravity="top"
+        android:hint="说点什么吧~"
+        android:background="@drawable/bg_input"
+        android:inputType="textMultiLine"
+        android:maxLength="500"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="最多500字"
+        android:textSize="12sp"
+        android:textColor="@android:color/darker_gray"/>
+
+</LinearLayout>
